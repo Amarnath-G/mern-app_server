@@ -13,7 +13,6 @@ recordRoutes.route("/record").get(async function (req, res) {
         res.status(404).json({ message: error.message })
     }
 })
-//Added a comment in record.js
 // This section will help you get a single record by id
 recordRoutes.route("/record/:id").get(async function (req, res) {
     const db_connect = dbo.getDb()
