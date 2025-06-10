@@ -12,7 +12,7 @@ services:
       - REACT_APP_YOUR_HOSTNAME=http://16.170.254.164:5000
   mern-app_server:
     build: .
-    image: amarnath2413/mern-app_client
+    image: amarnath2413/mern-app_server
     ports:
       - "5000:5000"
     environment:
